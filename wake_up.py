@@ -27,3 +27,4 @@ for url in urls:
         print(f"Failed to visit {url}: {e}")
 
 driver.quit()
+

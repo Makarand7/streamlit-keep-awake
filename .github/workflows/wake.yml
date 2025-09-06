@@ -1,26 +1,26 @@
-name: Wake Up Streamlit Apps
+name: Keep Streamlit Apps Awake
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # Runs every day at 4:00 AM UTC
-  workflow_dispatch:     # Allows manual trigger
+    - cron: "*/10 * * * *"   # every 10 minutes
+  workflow_dispatch:         # allow manual run too
 
 jobs:
   wake:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repo
+    - name: Checkout repository
       uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: "3.x"
 
     - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+      run: pip install -r requirements.txt
 
-    - name: Run Wake Script
+    - name: Run wake_up.py
       run: python wake_up.py
+
