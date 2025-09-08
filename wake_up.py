@@ -7,7 +7,8 @@ import time
 
 urls = [
     "https://bertelsmann-arvato-project-ammqvimjvkrdzksiee7pmh.streamlit.app/",
-    "https://recommendationswithibm-kbi4ibaoccgd6wyt5soorr.streamlit.app/"
+    "https://recommendationswithibm-kbi4ibaoccgd6wyt5soorr.streamlit.app/",
+    "https://evolution-design.streamlit.app/"
 ]
 
 options = Options()
